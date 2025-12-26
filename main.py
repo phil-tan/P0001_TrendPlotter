@@ -135,6 +135,15 @@ else:
             st.metric("Files Loaded", len(st.session_state.dataframes))
         with col4:
             st.metric("Resampling", resample_option)
+        
+        # Date range
+        col5, col6 = st.columns(2)
+        min_date = display_df[timestamp_col].min()
+        max_date = display_df[timestamp_col].max()
+        with col5:
+            st.metric("Start Date", min_date.strftime("%Y-%m-%d %H:%M"))
+        with col6:
+            st.metric("End Date", max_date.strftime("%Y-%m-%d %H:%M"))
 
     
     # Two-column layout for selections
