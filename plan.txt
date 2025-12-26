@@ -1,0 +1,8 @@
+Trend Plotter
+
+
+- upload multiple csv files as dataframes, assumes first column is timestamp column
+- stores uploaded dataframes until "Clear Data" button is clicked
+- user is able to select which columns show on primary and secondary axes with multiselect boxes
+= show line plot with all selected (columns of dataframe) as plotly chart
+- show combined dataframe as streamlit dataframe
